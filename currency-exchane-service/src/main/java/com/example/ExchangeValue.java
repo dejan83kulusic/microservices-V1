@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 @Entity
 public class ExchangeValue {
+
 	@Id
 	private Long id;
 	@Column(name="currency_form")
@@ -15,6 +16,7 @@ public class ExchangeValue {
 	private String to;
 	private BigDecimal conversionMultiple;
 	private int port;
+	
 	public ExchangeValue() {
 		
 	}
@@ -26,7 +28,6 @@ public class ExchangeValue {
 		this.to = to;
 		this.conversionMultiple = conversionMultiple;
 	}
-
 
 	public Long getId() {
 		return id;
@@ -43,7 +44,7 @@ public class ExchangeValue {
 	public BigDecimal getConversionMultiple() {
 		return conversionMultiple;
 	}
-	
+
 	public int getPort() {
 		return port;
 	}
@@ -51,5 +52,6 @@ public class ExchangeValue {
 	public void setPort(int port) {
 		this.port = port;
 	}
-
+	
+	
 }
