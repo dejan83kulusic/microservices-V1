@@ -1,4 +1,4 @@
-package com.example;
+package com.example.currencyconversionservice;
 
 import java.math.BigDecimal;
 
@@ -83,6 +83,5 @@ public class CurrencyConversionBean {
 	public void setPort(int port) {
 		this.port = port;
 	}
-	
 	
 }
